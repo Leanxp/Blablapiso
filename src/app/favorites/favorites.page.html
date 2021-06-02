@@ -1,0 +1,112 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+
+<ion-header>
+  <ion-navbar no-border-bottom>
+
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="piso">
+      <ion-segment-button value="Casas">
+		Casas
+      </ion-segment-button>
+      <ion-segment-button value="Pisos">
+        Pisos
+      </ion-segment-button>
+      <ion-segment-button value="Chalets">
+        Chalets
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="piso">
+    <ion-list *ngSwitchCase="'Casas'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://www.iberpisos.es/cacheimg/small/39/4002044639.jpg">
+        </ion-thumbnail>
+        <h2>Sevilla 1855 Suites</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://images.homify.com/c_fill,f_auto,q_0,w_740/v1540197791/p/photo/image/2758472/Construccion-de-chalets-en-malaga.jpg">
+        </ion-thumbnail>
+        <h2>El Pinillo de Málaga</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://www.casaarabe.es/images/image/3439/_glf0040_-grande.jpg">
+        </ion-thumbnail>
+        <h2>Córdoba Casa de los Azulejos</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://pic.le-cdn.com/thumbs/520x390/04/1/properties/Property-83c70000000004f4002e5e1cb957-83150723.jpg">
+        </ion-thumbnail>
+        <h2>Cádiz La Boquerona</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Pisos'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://www.sevillainmobiliaria.es/images/b1.jpg">
+        </ion-thumbnail>
+        <h2>Sevilla Este Apartment's</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://d1bvpoagx8hqbg.cloudfront.net/originals/bd98a940-c522-11ea-9c62-89652bd44ddf-IMG_20200604_195448.jpg">
+        </ion-thumbnail>
+        <h2>Sevilla Avenida de la Reina Mercedes</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/05/71/f6/5d.jpg">
+        </ion-thumbnail>
+        <h2>Córdoba Apartment's</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://static.inmofactory.com/images/inmofactory/documents/1/92251/26877947/364266070.jpg?rule=web_464x348_jpg_70">
+        </ion-thumbnail>
+        <h2>Huelva Residencial</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Chalets'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://www.diariodesevilla.es/2019/05/31/sevilla/chalets-Heliopolis-fondo-puente-Centenario_1359774523_100692920_667x375.jpg">
+        </ion-thumbnail>
+        <h2>Chalet Heliopolis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://static.diariosur.es/www/multimedia/202012/15/media/cortadas/pisos-martes-kjCF-U1201051051082UhH-624x385@RC.jpg">
+        </ion-thumbnail>
+        <h2>Málaga Urban</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://duy61s28optpi.cloudfront.net/1515087296009_-493460458.jpg">
+        </ion-thumbnail>
+        <h2>Cordo Experiencie</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://images.habimg.com/imgh/24423-171/se-vende-chalet-independiente-en-el-puente-tablas-jaen_24423-img171-130248438G.jpg">
+        </ion-thumbnail>
+        <h2>Ubeda Paradise</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
+</ion-content>
