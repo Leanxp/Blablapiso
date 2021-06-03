@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <form [formGroup]= "createPisoForm" (submit)="createPiso()">
+    <ion-item>
+      <ion-label stacked>Tipo de Inmueble </ion-label>
+      <ion-input 
+        formControlName= "tipoPiso"
+        type="text"
+        placeholder="¿Cual es el tipo de Inmueble?"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Direccion del Inmueble </ion-label>
+      <ion-input 
+        formControlName= "dirPiso"
+        type="text"
+        placeholder="¿Cual es la direccion de Inmueble?"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Coste de Alquiler </ion-label>
+      <ion-input 
+        formControlName= "costoPiso"
+        type="text"
+        placeholder="¿Cual es el coste de alquiler de Inmueble?"
+      >
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Tipo de alquiler del Inmueble </ion-label>
+      <ion-input 
+        formControlName= "tipoAlquiler"
+        type="text"
+        placeholder="¿Cual es el tipo de alquiler del Inmueble?"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Descripcion del Inmueble </ion-label>
+      <ion-textarea 
+        formControlName= "descripcionPiso"
+        type="text"
+        placeholder="Breve descripcion del inmueble a alquilar"
+      >
+      </ion-textarea>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" fill="clear" >
+      Añadir Piso
+    </ion-button>
+  </form>
+</ion-content>
+<ion-content>
+
+</ion-content>

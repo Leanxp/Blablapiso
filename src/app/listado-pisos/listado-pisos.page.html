@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listadoPisos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button routerLink="/create">
+      añadir piso
+    </ion-button>
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content class="padding">
+<ion-item 
+  *ngFor= "let piso of pisosList | async"
+  routerLink= "/detail/{{piso.id}}">
+<ion-label>
+  <h2>{{piso.tipoPiso}}</h2>
+  <p>Localizacion: {{piso.dirPiso}}</p>
+</ion-label>
+</ion-item>
+</ion-content>

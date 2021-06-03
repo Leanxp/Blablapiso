@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{piso?.dirPiso}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>Tipo de Inmueble</h3>
+  <p>{{piso?.tipoPiso}}</p>
+
+  <h3>Localizacion</h3>
+  <p>Este inmueble esta localizado en {{piso?.dirPiso}}</p>
+
+  <h3>Coste de Alquiler</h3>
+  <p>El coste de alquilar este inmueble es de {{piso?.costoPiso}} €</p>
+
+  <h3>Tipo de Alquiler del Inmueble</h3>
+  <p>Este Inmueble se puede alquilar: {{piso?.tipoAlquiler}}</p>
+
+  <h3>Descripcion del Inmueble</h3>
+  <p>{{piso?.descripcionPiso}}</p>
+
+  <ion-button expand="block" (click)="deletePiso(piso.id, piso.dirPiso)">Borrar Inmueble</ion-button>
+
+
+
+
+
+</ion-content>

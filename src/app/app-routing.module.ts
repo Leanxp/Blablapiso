@@ -46,7 +46,22 @@ const routes: Routes = [
   {
     path: 'legal',
     loadChildren: () => import('./legal/legal.module').then( m => m.LegalPageModule)
-  }
+  },
+  {
+    path: 'create',
+    loadChildren: () => import('./pages/create/create.module').then( m => m.CreatePageModule)
+  },
+  {
+    path: 'detail/:id',
+    loadChildren: () => import('./pages/detail/detail.module').then( m => m.DetailPageModule)
+  },  {
+    path: 'listado-pisos',
+    loadChildren: () => import('./listado-pisos/listado-pisos.module').then( m => m.ListadoPisosPageModule)
+  },
+
+  
+
+
 ];
 
 @NgModule({
