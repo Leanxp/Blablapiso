@@ -11,6 +11,7 @@ export class AppComponent {
     { title: 'Favoritos', url: '/favorites', icon: 'heart' },
     { title: 'Nuestros clientes', url: '/custommers', icon: 'people' },
     { title: 'Denunciar un problema', url: '/problem', icon: 'warning' },
+    { title: 'Pisos', url: '/listado-pisos', icon: 'people'}
   ];
 
   public appPages2 = [
